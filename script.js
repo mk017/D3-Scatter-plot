@@ -128,7 +128,7 @@ const drawTooltip = () => {
     }
     const mouseleave = function () {
         tooltip.style("opacity", 0)
-        d3.select(this).moveToBack()
+        d3.select(this)
             .style("order", 1)
             .style("stroke-width", 1)
             .style("opacity", 0.7)
